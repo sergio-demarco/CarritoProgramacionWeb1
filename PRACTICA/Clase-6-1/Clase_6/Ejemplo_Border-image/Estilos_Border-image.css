@@ -1,0 +1,40 @@
+/*
+Border-image
+La nueva propiedad border-image fue incorporada para superar estas limitaciones y dejar en manos del diseñador la calidad y variedad de bordes disponibles ofreciendo la alternativa de utilizar imágenes propias.
+
+La propiedad border-image toma una imagen y la utiliza como patrón. De acuerdo a los valores otorgados, la imagen es
+cortada como un pastel, las partes obtenidas son luego ubicadas alrededor del objeto para construir el borde.
+
+Para hacer el trabajo, necesitamos especificar tres atributos: 
+
+El nombre del archivo de la imagen.
+El tamaño de las piezas que queremos obtener del patrón.
+Y algunas palabras clave para declarar cómo las piezas serán distribuidas alrededor del objeto.
+
+Existen tres valores posibles para el último atributo. 
+
+La palabra clave repeat repetirá las piezas tomadas de la imagen todas las veces que sea necesario para cubrir el lado del elemento. 
+
+La palabra clave round considerará qué tan largo es el lado a ser cubierto y ajustará el tamaño de las piezas para asegurarse que cubren todo el lado y ninguna pieza es cortada.
+
+La palabra clave stretch estira solo una pieza para cubrir el lado completo.
+*/
+
+#principal 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 29px;
+
+	-moz-border-image: url(unlam.jpg) 0% stretch;
+	-webkit-border-image: url(unlam.jpg) 0% stretch;
+	
+}
+
+#titulo 
+{
+	font: bold 16px verdana, sans-serif;
+}

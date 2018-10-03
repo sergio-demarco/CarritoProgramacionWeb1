@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="=UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body>
+        <header>
+            <h1>♥ Bienvenidos al mundo de Winnie ♥</h1>
+        </header>
+        <main>
+            <section>
+				<figure>
+						<img src="img\winnie.jpg" alt="♥" >	
+						<figcaption>Winnie pregunta</figcaption>					
+				</figure>
+                <form action="" method="get" enctype="multipart/form-data">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su winnie-nombre" maxlength="10" required>
+                </br></br>
+
+                    <label for="mail">Winnie-mail: </label>
+                    <input type="email" id="mail" name="mail" placeholder="winnie@gmail.com" required>
+                </br></br>
+                    
+                    <label for="provincia">Locación mágica: </label>
+                    <select name="provincia" id="provincia">
+                        <option value="">Seleccione Locación Mágica</option>
+                        <option value="1" selected>Aldea de Chocolate</option>
+                        <option value="2">Valle de Caramelos</option>
+                        <option value="3">Montaña de Chupetines</option>
+                    </select>
+                </br></br>
+
+                    <label for="mensaje">Dejale un mensaje a Winnie: </label>
+                </br>
+                    
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </br></br>
+
+                    <label for="terminos">Términos y Condiciones</label>
+                    <input type="checkbox" name="terminos" id="terminos" checked>
+                </br>
+
+                    <label for="noticias">Querés recibir noticias en tu Winnie-mail?</label>
+                    <input type="checkbox" name="noticias" id="noticias">
+                <br></br>
+
+                    <label for="femenino">Niña</label>
+                    <input type="radio" name="sexo" id="femenino" value="femenino">
+
+                    <label for="masculino">Niño</label>
+                    <input type="radio" name="sexo" id="masculino" value="masculino" checked>
+                <br></br>
+
+                    <datalist id="lista">
+                        <option value="Blanco">
+                        <option value="Azul">
+                        <option value="Verde">
+                        <option value="Amarillo">
+                    </datalist>
+                    <label for="color">Elije un color para tu pony: </label>
+                    <input type="text" name="color" id="color" list="lista">
+                <br></br>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+        </main>
+    </body>
+
+</html>

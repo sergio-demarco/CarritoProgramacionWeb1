@@ -1,0 +1,71 @@
+/*
+Border-radius
+Por muchos años diseñadores han sufrido intentando lograr el efecto de esquinas redondeadas en las cajas de sus páginas
+web. El proceso era casi siempre frustrante y extenuante. Por esta razón entre todas las nuevas posibilidades e increíbles propiedades incorporadas en CSS3, la que
+exploraremos en primera instancia es border-radius:
+*/
+
+body 
+{
+	text-align: center;
+}
+
+#principal /*Generando esquinas redondeadas.*/
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#titulo 
+{
+	font: bold 16px verdana, sans-serif;
+}
+
+
+#secundario /*Diferentes valores para cada esquina. Podemos declarar un valor diferente por cada una:*/
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	
+	-moz-border-radius: 20px 10px 30px 50px;
+	-webkit-border-radius: 20px 10px 30px 50px;
+	border-radius: 20px 10px 30px 50px;
+}
+
+
+/*
+
+También podemos dar forma a las esquinas declarando un segundo grupo de valores separados por una barra. Los
+valores a la izquierda de la barra representarán el radio horizontal mientras que los valores a la derecha representan el radio vertical. La combinación de estos valores genera una elipsis:
+*/
+
+#terciario /*Esquinas elípticas.*/
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+
+	background: #DDDDDD;
+-moz-border-radius: 20px / 55px;
+	-webkit-border-radius: 20px / 55px;
+	border-radius: 20px / 55px;
+}
+
+

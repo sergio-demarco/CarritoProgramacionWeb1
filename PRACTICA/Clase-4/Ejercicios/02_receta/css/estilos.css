@@ -1,0 +1,80 @@
+*{ 
+    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
+    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+}
+body{
+    background-image: url(../img/fondo.jpg); /*Imagen de fondo*/
+    font-family: Georgia; /*Tipo de fuente*/
+    color: #624435;/*color de fuente*/
+}
+h1{
+    color: #fff; 
+    text-align: center; /*alineacion de texto centrado*/
+}
+h2{
+    border-bottom: 2px #896755 dotted; /*borde inferior de 2px de grosor, de tipo punteado*/
+    margin-top: 25px; 
+}
+h3{
+    margin-top: 32px; 
+    background-color: #624435; /*color de fondo*/
+    color:#fff;
+    width: 300px;
+    padding:10px; /*margen interno*/
+}
+header{
+    background-color: #896755;
+    padding: 25px;
+    border-bottom: 4px #624435 solid;
+    margin-bottom: 20px;
+}
+ol, ul{
+    margin-top: 20px;
+    padding-left: 35px;
+}
+li{
+    margin-bottom: 10px;
+}
+li p{
+    text-align: justify; /*alineacion de texto justificado para los parrafos que están dentro de un li*/
+}
+main{
+    width: 80%; /*ancho expresado en porcentaje*/
+    margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
+}
+section{
+    margin-bottom: 20px;
+}
+footer{
+    background: #896755;
+    padding:20px;
+    text-align: center;
+    color: #fff;
+    border-top: 4px #624435 solid;
+    font-style: italic; /*estilo de fuente cursiva*/
+}
+.comentario{
+    text-align: center;
+    color:#624435;
+    margin-top: 10px;
+}
+.arriba{
+    text-align: right;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+/*estilos vinculos*/
+a{
+    text-decoration: none; /*les saca el subrayado a los vínculos*/
+}
+a:hover{
+    text-decoration: underline; /*en el estado hover, los vinculos se subrayan*/
+}
+.arriba a {
+     color:#624435; /*color del vinculo, que está dentro del parrafo de clase "arriba"*/
+}
+footer a{
+    color: #fff; /*color de los vinculos del footer*/
+}

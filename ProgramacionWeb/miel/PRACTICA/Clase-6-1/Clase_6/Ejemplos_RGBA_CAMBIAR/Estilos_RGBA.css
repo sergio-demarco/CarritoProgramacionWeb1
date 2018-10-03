@@ -1,0 +1,85 @@
+/*
+RGBA
+Hasta este momento los colores fueron declarados como sólidos utilizando valores hexadecimales o la función rgb() para
+decimales. CSS3 ha agregado una nueva función llamada rgba() que simplifica la asignación de colores y transparencias.
+
+La función rgba() tiene cuatro atributos. 
+
+Los primeros tres son similares a los usados en rgb() y simplemente declaran los valores para los colores rojo, verde y azul en números decimales del 0 al 255. 
+El último, en cambio, corresponde a la nueva capacidad de opacidad. 
+Este valor se debe encontrar dentro de un rango que va de 0 a 1, con 0 como totalmente transparente y 1 como totalmente opaco.
+*/
+
+body 
+{
+	text-align: center;
+}
+
+#principal
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: rgba(150,150,150,0) 5px 5px 10px;
+}
+
+#secundario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: rgba(150,150,150,0.5) 5px 5px 10px;
+}
+
+#terciario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	box-shadow: rgba(150,150,150,1) 5px 5px 10px;
+}
+
+#titulo_1 
+{
+	font: bold 16px verdana, sans-serif;
+	text-shadow: rgba(0,0,0,0) 3px 3px 5px;
+}
+
+#titulo_2
+{
+	font: bold 16px verdana, sans-serif;
+	text-shadow: rgba(0,0,0,0.5) 3px 3px 5px;
+}
+
+#titulo_3
+{
+	font: bold 16px verdana, sans-serif;
+	text-shadow: rgba(0,0,0,1) 3px 3px 5px;
+}
+
+
+

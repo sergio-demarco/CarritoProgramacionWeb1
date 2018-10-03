@@ -1,0 +1,89 @@
+/*
+Gradiente lineal
+Los gradientes son uno de los efectos más atractivos entre aquellos incorporados en CSS3. Este efecto era prácticamente
+imposible de implementar usando técnicas anteriores pero ahora es realmente fácil de hacer usando CSS. Una propiedad
+background con algunos pocos parámetros es suficiente para convertir su documento en una página web con aspecto
+profesional:
+
+Los gradientes son configurados como fondos, por lo que podemos usar las propiedades background o backgroundimage
+para declararlos. 
+
+La sintaxis para los valores declarados en estas propiedades son:
+
+linear-gradient(posición inicio, color inicial, color final). 
+
+El primer valor puede ser especificado en pixeles, porcentaje o usando las palabras clave top, bottom, left y right (como hicimos en nuestro ejemplo). 
+
+El punto de comienzo puede ser reemplazado por un ángulo para declarar una dirección específica del gradiente:
+Gradiente con un ángulo de dirección de 30 grados.
+
+background: linear-gradient(30deg, #FFFFFF, #006699);
+
+También podemos declarar los puntos de terminación para cada color:
+
+background: linear-gradient(top, #FFFFFF 50%, #006699 90%);
+
+*/
+
+
+
+body 
+{
+	text-align: center;
+}
+
+#principal 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	order: 1px solid #999999;
+	background: #DDDDDD;
+
+	background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+	background: -moz-linear-gradient(top, #FFFFFF, #006699);
+	background: linear-gradient(top, #FFFFFF, #006699);
+
+}
+
+
+#secundario 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	order: 1px solid #999999;
+	background: #DDDDDD;
+
+	background: -webkit-linear-gradient(left, #FFFFFF 30%, #006699 70%);
+	background: -moz-linear-gradient(left, #FFFFFF 30%, #006699 70%);
+	background: linear-gradient(left, #FFFFFF 30%, #006699 70%);
+}
+
+
+
+#terciario 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	order: 1px solid #999999;
+	background: #DDDDDD;
+
+	background: -webkit-linear-gradient(30deg, #FFFFFF, #006699);
+	background: -moz-linear-gradient(30deg, #FFFFFF, #006699);
+	background: linear-gradient(30deg, #FFFFFF, #006699);
+}
+
+
+#titulo 
+{
+	font: bold 16px verdana, sans-serif;
+}
+

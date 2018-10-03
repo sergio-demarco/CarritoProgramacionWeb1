@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url(../img/fondo02.png);
+}
+header,main{
+    background: #fff;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+header{
+    margin-top: 20px;
+}
+a{
+    color: #fff;
+    background-color: #4571b7;
+    padding: 10px;
+    text-decoration: none;
+    transition:0.5s; 
+}
+a:hover{
+    background-color: #769fe0;
+    text-decoration: underline;
+}

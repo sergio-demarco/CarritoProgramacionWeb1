@@ -1,0 +1,42 @@
+body 
+{
+	text-align: center;
+}
+
+#primario 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	-moz-box-shadow: rgb(150,150,150) 5px 5px;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px;
+	box-shadow: rgb(150,150,150) 5px 5px 10px;
+}
+
+#secundario 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	-moz-box-shadow: rgb(150,150,150) 5px 5px inset;
+	-webkit-box-shadow: rgb(150,150,150) 5px 5px inset;
+	box-shadow: rgb(150,150,150) 5px 5px 10px inset;
+}
+
+#titulo 
+{
+	font: bold 26px verdana, sans-serif;
+}
+
+
+
+
+

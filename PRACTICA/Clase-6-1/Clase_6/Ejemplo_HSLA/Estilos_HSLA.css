@@ -1,0 +1,93 @@
+/*
+HSLA
+
+La función hsla() es simplemente un función para generar colores.
+
+La sintaxis de esta función es:
+
+hsla(tono, saturación, luminosidad, opacidad).
+
+
+Tono: representa el color extraído de una rueda imaginaria y es expresado en grados desde 0 a 360.
+Cerca de 0 y 360 están los colores rojos, cerca de 120 los verdes y cerca de 240 los azules. 
+
+Saturación: es representado en porcentaje, desde 0% (escala de grises) a 100% (todo color o completamente saturado).
+
+Luminosidad: es también un valor en porcentaje desde 0% (completamente oscuro) a 100% (completamente iluminado). 
+
+Opacidad: así como en rgba(), representa la opacidad.
+
+*/
+
+body 
+{
+	text-align: center;
+}
+
+#principal
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#secundario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#terciario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+background: #DDDDDD;
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+
+
+
+#titulo_1
+{
+	font: bold 16px MiNuevaFuente, verdana, sans-serif;
+	color: hsla(120, 100%, 100%, 1);
+}
+
+#titulo_2
+{
+	font: bold 16px MiNuevaFuente, verdana, sans-serif;
+	color: hsla(120, 75%, 75%, 0.5);
+}
+
+#titulo_3
+{
+	font: bold 16px MiNuevaFuente, verdana, sans-serif;
+	color: hsla(120, 50%, 50%, 1);
+}
+
+
+

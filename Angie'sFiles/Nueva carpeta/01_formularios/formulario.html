@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estiloform01.css">
+    <!--link rel="stylesheet" href="css/estiloform02.css"-->
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <main>
+        <article class="formulario">
+            <form action="form/envio.php" method="post">
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" name="nombre" placeholder="Ingrese el nombre y Apellido" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="ejemplo@ejemplo.com.ar" required>
+
+                <label for="Consultas">Consultas:</label>
+                <textarea name="consulta" placeholder="Ingrese su consulta" required></textarea>
+
+                <div class="clear"> </div>
+                <input type="submit" value="Enviar" class="boton">
+            </form>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,187 @@
+body
+{
+	background-image: url(../img/fondo01.jpg);
+}
+
+
+label
+{
+	font-size: 15px;
+	font-style: italic;
+}
+
+
+.contacto
+{
+	padding: 20px;
+}
+
+.contacto input[type='text'], input[type="password"]
+{ 
+	width: 50%;
+	box-shadow: 4px 4px 5px gray;
+	padding: 5px;
+	border-radius: 25px;
+
+
+}
+
+.contacto input[type="submit"], input[type="reset"]
+{
+	box-shadow: 4px 4px 5px gray;
+	margin-top: 18px;
+}
+
+.errores
+{
+	margin-top: 35px;
+	color: red;
+	float:right;
+	display: none;
+	font: 17px;
+	background-color: red;
+	color: white;
+	padding: 5px;
+	box-shadow: 4px 4px 5px gray;
+	border-radius: 20px;
+	width: 40%;
+	text-align: center;
+
+}
+
+#contenedor
+{	
+	width: 700px;
+	height: auto;
+	margin: auto;
+	font-family: segoe ui,arial;
+	font-size: 10pt;
+}
+
+
+.encabezado		
+{	
+	width: 700px;
+	height: 145px;		
+	background-image: url(../img/encabezado2.jpg);
+	border-radius: 25px 25px 0 0;
+
+}
+
+
+.contenido
+{	
+	width: auto;
+	height: auto;
+	padding: 20px;
+	clear:left;	
+	border: 2px solid black;
+	border-radius: 0 0 25px 25px;
+}	
+
+
+.pie
+{
+	width: 700px;
+	height: 100px;
+	border-radius: 25px;
+	border-style: solid;
+	text-align: center;
+	margin:auto;
+	border: 2px;
+
+}
+
+#photo1
+{
+	background-image: url(../img/photo1.jpg);
+	float: left;
+	width: 200px;
+	height: 235px;
+	margin-right: 20px;
+	border-radius: 20px;
+
+}
+
+/*		MENU		*/
+ul, ol 
+{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.nav
+{
+	margin: auto;
+	width: auto;
+	float: right;
+}
+			
+.nav > li 
+{
+	float: left;
+}
+			
+
+.nav li a 
+{
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 12px;
+	display: block;
+}
+
+
+.nav li a:hover 
+{
+	background-color: #0071c5;
+}
+
+
+.nav li ul 
+{
+	display: none;
+	position: absolute;
+	min-width: 140px;
+}
+
+
+.nav li:hover > ul 
+{
+	display: block;
+}
+
+
+.nav li ul li 
+{
+	position: relative;
+}
+
+
+.nav li ul li ul 
+{
+	right: -140px;
+	top: 0px;
+}
+
+
+
+.pie
+{
+	width: 700px;
+	height: 100px;
+	border-radius: 25px;
+	border-style: solid;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+.pieimg
+{
+	width: 200px;
+	height: 35px;
+	float: right;
+}

@@ -1,0 +1,98 @@
+*{ 
+    margin: 0; /*resetea los margenes por defecto que tienen los elementos html*/
+    padding: 0; /*resetea el padding (margen interno) de los elementos html*/
+}
+html,body{
+    background-color: white;
+    /*background-image: url(../img/fondo.jpg); Imagen de fondo*/
+    font-family: 'Open Sans', sans-serif; /*Tipo de fuente*/
+}
+.inicio{
+    font-size: 1.2em;
+    padding: .5em 3em;
+    color: #fff;
+    /*text-align: left; alineacion de texto centrado*/
+    background: #84C639;
+    display: block;
+    float: left;
+    cursor: pointer;
+    text-decoration:none;
+}
+.buscador{
+    float: left;
+    width: 27%;
+    margin: .1em 0 0em 10em;
+}
+.buscador input[type="text"]{
+outline: none;
+padding: 10px;
+color:#212121;
+font-size: 14px;
+width:70%;
+background: #fff;
+border: 1px solid #999;
+float: left;
+}
+.buscador input[type="submit"]{
+    outline: none;
+padding: 10px;
+width: 20%;
+border: 1px solid #999;
+position: relative;
+font-size: 14px;
+cursor: pointer;
+}
+.contacto{    
+    font-size: 1.2em;
+    padding: .5em 3em;
+    color: #fff;
+    /*text-align: left; alineacion de texto centrado*/
+    background: #84C639;
+    display: block;
+    float: right;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+h2{
+    border-bottom: 2px #896755 dotted; /*borde inferior de 2px de grosor, de tipo punteado*/
+    margin-top: 25px; 
+}
+h3{
+    margin-top: 32px; 
+    background-color: #624435; /*color de fondo*/
+    color:#fff;
+    width: 300px;
+    padding:10px; /*margen interno*/
+}
+header{
+    background-color: rgb(51, 51, 51);
+    /*padding: 10px;
+    border-bottom: 4px grey solid;
+    margin-bottom: 20px;*/
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+main{
+    padding: 2em 0 1em;
+    width: 80%; /*ancho expresado en porcentaje*/
+    margin: auto; /*la propiedad margin con el valor auto, centra verticalmente*/
+}
+.bannerMain{
+    padding: 1em 0 1em;
+    width: 100%;
+}
+.banner{
+    float: left;
+    width: 20%;
+    height: 120px;
+}
+.banner2{
+    float: right;
+    width: 80%;
+    height: 200px;
+}
+.productos{
+    
+}

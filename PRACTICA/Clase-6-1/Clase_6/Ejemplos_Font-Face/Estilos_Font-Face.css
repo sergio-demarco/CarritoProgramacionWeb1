@@ -1,0 +1,43 @@
+/*
+@font-face
+Usuarios regulares de la web a menudo tienen un número limitado de fuentes instaladas en sus computadoras, usualmente estas fuentes son
+diferentes de un usuario a otro, y la mayoría de las veces muchos usuarios tendrán fuentes que otros no. Por años, los sitios webs solo pudieron utilizar un
+limitado grupo de fuentes confiables (un grupo básico que prácticamente todos los usuarios tienen instalados) y así presentar la información en pantalla.
+
+La propiedad @font-face permite a los diseñadores proveer un archivo conteniendo una fuente específica para mostrar sus textos en la página. 
+
+Ahora podemos incluir cualquier fuente que necesitemos con solo proveer el archivo adecuado:
+
+Nueva fuente para el título
+
+Puede obtener más fuentes similares de forma gratuita en www.moorstation.org/typoasis/designers/steffmann/.
+
+*/
+
+body 
+{
+	text-align: center;
+}
+
+#principal 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+}
+
+#titulo 
+{
+	font: bold 36px MiNuevaFuente, verdana, sans-serif;
+}
+
+@font-face 
+{
+	font-family: 'MiNuevaFuente';
+	src: url('Augusta.ttf');
+}
+

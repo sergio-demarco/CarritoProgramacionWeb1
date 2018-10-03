@@ -1,0 +1,19 @@
+
+ body { 
+  padding: 10px 10px 0 10px;
+  background-color: #f8f8f8;
+}
+
+input[type="email"] {
+  width: 240px;
+  max-width: 100%;
+}
+
+input {
+  padding: 5px;
+   font-size: 1.25em
+}
+
+body, input {
+  font-family: sans-serif;
+}

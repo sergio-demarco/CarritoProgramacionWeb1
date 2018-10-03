@@ -1,0 +1,187 @@
+/*
+Transform y transition
+
+Los elementos HTML, cuando son creados, son como bloques sólidos e inamovibles. Pueden ser movidos usando código
+Javascript o aprovechando librerías populares como jQuery (www.jquery.com), por ejemplo, pero no existía un procedimiento
+estándar para este propósito hasta que CSS3 presentó las propiedades transform y transition.
+
+Ahora ya no tenemos que pensar en cómo hacerlo. En su lugar, solo tenemos que conocer cómo ajustar unos pocos
+parámetros y nuestro sitio web puede ser tan flexible y dinámico como lo imaginamos.
+
+La propiedad transform puede operar cuatro transformaciones básicas en un elemento: 
+scale (escalar)
+rotate (rotar)
+skew (inclinar)
+translate (trasladar o mover). 
+
+Veamos cómo funcionan:
+Transform: scale
+
+La función scale recibe dos parámetros: el valor X para la escala horizontal y el valor Y para la escala vertical. 
+Si solo un valor es provisto el mismo valor es aplicado a ambos parámetros.
+*/
+
+#primero 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	-moz-transform: scale(2);
+	-webkit-transform: scale(2);
+}
+
+/*
+Un efecto atractivo puede ser logrado con esta función otorgando valores negativos:
+El primer valor, 1 mantiene la proporción original para la dimensión horizontal de la caja. El segundo valor también mantiene la proporción
+original, pero invierte el elemento verticalmente para producir el efecto espejo.
+*/
+
+#segundo
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	
+	-moz-transform: scale(1,-1);
+	-webkit-transform: scale(1,-1);
+}
+
+/*
+Transform: rotate
+La función rotate rota el elemento en la dirección de las agujas de un reloj. El valor debe ser especificado en grados usando
+la unidad “deg”:
+*/
+
+#tercero 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+}
+
+/*
+Transform: skew
+Esta función cambia la simetría del elemento en grados y en ambas dimensiones.
+*/
+
+#cuarto 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	
+	-moz-transform: skew(20deg);
+	-webkit-transform: skew(20deg);
+}
+
+/*
+Transform: translate
+Similar a las viejas propiedades top y left, la función translate mueve o desplaza el elemento en la pantalla a una nueva posición.
+La función translate considera la pantalla como una grilla de pixeles, con la posición original del elemento usada como
+un punto de referencia. La esquina superior izquierda del elemento es la posición 0,0, por lo que valores negativos moverán
+al objeto hacia la izquierda o hacia arriba de la posición original, y valores positivos lo harán hacia la derecha o hacia abajo.
+Dos valores pueden ser declarados en esta función si queremos mover el elemento horizontal y verticalmente, o podemos usar
+funciones independientes llamadas translateX y translateY.
+*/
+
+#quinto 
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	-moz-transform: translate(100px);
+	-webkit-transform: translate(100px);
+}
+
+/*
+Transformaciones dinámicas
+Podemos aprovecharnos de la combinación de transformaciones y pseudo clases para
+convertir nuestra página en una aplicación dinámica:
+
+Aplicamos efectos de transformación usando la vieja pseudo clase :hover. El resultado obtenido es que
+cada vez que el puntero del ratón pasa sobre esta caja, la propiedad transform rota la caja en 15 grados, y cuando el puntero
+se aleja la caja vuelve a rotar de regreso a su posición original. Este efecto produce una animación básica pero útil con nada
+más que propiedades CSS.
+*/
+
+#sexto
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+} 
+
+#sexto:hover
+{
+	-moz-transform: rotate(15deg);
+	-webkit-transform: rotate(15deg);
+}
+/*
+
+Transiciones
+La propiedad transition fue incluida para suavizar los cambios, creando mágicamente el resto de los pasos que se
+encuentran implícitos en el movimiento. 
+
+Como puede ver en el Listado 3-26, la propiedad transition puede tomar hasta cuatro parámetros separados por un
+espacio. 
+
+El primer valor es la propiedad que será considerada para hacer la transición (en nuestro ejemplo elegimos
+transform). 
+
+Esto es necesario debido a que varias propiedades pueden cambiar al mismo tiempo y probablemente
+necesitemos crear los pasos del proceso de transición solo para una de ellas. 
+
+El segundo parámetro especifica el tiempo que la transición se tomará para ir de la posición inicial a la final. 
+
+El tercer parámetro puede ser cualquiera de las siguientes palabras clave: ease, linear, ease-in, ease-out o ease-in-out. 
+
+El último parámetro para la propiedad transition es el retardo. Éste indica cuánto tiempo tardará la transición en comenzar.
+
+*/
+
+#septimo
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	-moz-transition: -moz-transform 1s ease-in-out 0.5s;
+	-webkit-transition: -webkit-transform 1s ease-in-out 0.5s;
+} 
+
+#septimo:hover
+{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}

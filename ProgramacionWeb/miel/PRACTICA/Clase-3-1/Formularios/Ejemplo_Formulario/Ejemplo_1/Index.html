@@ -1,0 +1,30 @@
+<!doctype html>
+
+<html lang=es>
+<head>
+	<meta charset=utf-8>
+ 	<title>Maquetacion de Formularios.</title> 
+	<link href="css/estilo.css" rel="stylesheet" type="text/css" /> 
+</head> 
+
+<body>
+    <div id="formulario">
+        <form method="get" action="pagina-destino.php">
+            <h1>Formulario de Registro</h1><br>
+            <label>Nombre</label>
+            <input type="text" id="nombre" required="" placeholder="Nombre" />
+              
+            <label>Fecha de Registro</label>
+
+            <input type="date" id="fecha" required="" placeholder="Fecha" />
+            <label>Email</label>
+
+            <input type="email" id="email" required="" placeholder="Email" />
+
+            <label>Password : </label>
+            <input type="password" id="password" required="" placeholder="Password" />
+            <button type="submit" id="enviar">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

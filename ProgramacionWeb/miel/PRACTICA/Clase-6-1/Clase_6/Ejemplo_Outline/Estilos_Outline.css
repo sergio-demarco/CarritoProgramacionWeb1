@@ -1,0 +1,65 @@
+/*
+Outline
+Esta propiedad es usada para crear un segundo borde, y ahora ese borde puede ser mostrado alejado del borde real del
+elemento.
+
+La propiedad outline tiene similares características y usa los mismos
+parámetros que border. 
+
+La propiedad outline-offset solo necesita un valor en pixeles.
+
+*/
+
+body 
+{
+	text-align: center;
+}
+
+#principal
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+	
+	outline: 5px dashed #000099;
+	outline-offset: 5px;
+}
+
+#secundario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	outline: 10px dashed #000099;
+	outline-offset: 10px;
+}
+
+#terciario
+{
+	display: block;
+	width: 500px;
+	margin: 50px auto;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #999999;
+	background: #DDDDDD;
+
+	outline: 20px dashed #000099;
+	outline-offset: 20px;
+}
+
+#titulo
+{
+	font: bold 16px verdana, sans-serif;
+}
+
+

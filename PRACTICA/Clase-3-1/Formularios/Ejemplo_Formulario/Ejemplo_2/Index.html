@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+      <title>Ejemplo de Formulario</title>
+      <meta charset=utf-8>
+      <link href="./css/estilos_total.css" rel="stylesheet" type="text/css">  
+  </head>
+  <body>
+    <div class="container">  
+      <form id="contact" action="http://www.unlam.edu.ar" method="post">
+        <h3>Formulario de Contacto</h3>
+        <h4>Nos contactaremos con usted en menos de 24hs.</h4>
+        <fieldset>
+			<input placeholder="Nombre y Apellido" type="text" tabindex="1" required autofocus><br/>
+			
+			<input placeholder="Correo Electrónico" type="email" tabindex="20" required><br/>
+                
+			<input placeholder="Teléfono" type="tel" tabindex="3" required><br/>
+        
+			<input placeholder="Sitio Web" type="url" tabindex="2" required><br/>
+        
+			<textarea placeholder="Escriba su mensaje..." tabindex="5" required></textarea><br/>
+        
+			<button type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+        </fieldset>
+      </form>
+     
+      
+    </div>
+  </body>
+
+</html>
